@@ -1,0 +1,82 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(download.png) ;
+}
+header
+{
+    background-color: rgba(0, 0, 0, 0.705); 
+    display: flex;
+    justify-content: center;
+}
+header img
+{
+    min-width: 350px;
+    min-height: 100px;
+}
+#hero-page
+{ 
+    justify-content: space-evenly;
+    display: flex;
+    width: fit-content;
+    min-width: 400px;
+    
+}
+#hero-page #letter
+{
+background-color:rgba(37, 30, 32, 0.863);
+width: fit-content;
+height: fit-content;
+line-height: 40px;
+min-width: 244px;
+padding: 50px 10px;
+margin: 60px 20px;
+color: white;
+}
+#images
+{
+   display: flex;
+   flex-direction: column;
+    margin: 20px;
+}
+#images div
+{
+    display: flex;
+}
+#images img 
+{
+    width: 400px;
+    height: 300px;
+}
+
+@media(max-width: 840px)
+{
+    #images
+    {
+        gap: 20px;
+    }
+#images img 
+{
+    width: 300px;
+    height: 300px;
+}
+}
+@media(max-width: 740px)
+{
+    #images img 
+    {
+        width: 200px;
+    }
+}
+@media(max-width: 540px)
+{
+    #hero-page 
+    {
+        flex-direction: column-reverse;
+    }
+    #images img 
+    {
+       width: 400px;
+    }
+}
